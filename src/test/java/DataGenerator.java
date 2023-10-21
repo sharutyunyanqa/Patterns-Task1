@@ -1,5 +1,6 @@
-import lombok.Value;
+
 import com.github.javafaker.Faker;
+import lombok.Value;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
@@ -39,8 +40,6 @@ public class DataGenerator {
         Faker faker = new Faker(new Locale(locale));
         String name = faker.name().fullName();
 
-        // TODO: добавить логику для объявления переменной name и задания её значения, для генерации можно
-        // использовать Faker
         return name;
     }
 
@@ -48,8 +47,6 @@ public class DataGenerator {
         Faker faker = new Faker(new Locale(locale));
         String phone = faker.phoneNumber().cellPhone();
 
-        // TODO: добавить логику для объявления переменной phone и задания её значения, для генерации можно
-        // использовать Faker
         return phone;
     }
 
@@ -67,8 +64,6 @@ public class DataGenerator {
             return user;
 
 
-            // TODO: добавить логику для создания пользователя user с использованием методов generateCity(locale),
-            // generateName(locale), generatePhone(locale)
 
         }
     }
